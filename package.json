@@ -1,7 +1,7 @@
 {
-  "name": "postcss-url",
+  "name": "postcss-url-no-xxhash",
   "version": "7.1.2",
-  "description": "PostCSS plugin to rebase or inline on url().",
+  "description": "PostCSS plugin to rebase or inline on url(). (no xxhash)",
   "keywords": [
     "css",
     "postcss",
@@ -14,7 +14,7 @@
   ],
   "author": "Maxime Thirouin",
   "license": "MIT",
-  "repository": "https://github.com/postcss/postcss-url.git",
+  "repository": "https://github.com/kesne/postcss-url.git",
   "main": "src/index.js",
   "files": [
     "src"
@@ -23,8 +23,7 @@
     "mime": "^1.2.11",
     "minimatch": "^3.0.0",
     "mkdirp": "^0.5.0",
-    "postcss": "^6.0.1",
-    "xxhashjs": "^0.2.1"
+    "postcss": "^6.0.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",

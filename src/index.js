@@ -9,7 +9,7 @@ const declProcessor = require('./lib/decl-processor').declProcessor;
  *
  * @type {Plugin}
  */
-module.exports = postcss.plugin('postcss-url', (options) => {
+module.exports = postcss.plugin('postcss-url-no-xxhash', (options) => {
     options = options || {};
 
     return function(styles, result) {

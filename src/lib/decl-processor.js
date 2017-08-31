@@ -43,7 +43,7 @@ function getUrlProcessor(optionUrl) {
     const mode = getUrlProcessorType(optionUrl);
 
     if (PROCESS_TYPES.indexOf(mode) === -1) {
-        throw new Error(`Unknown mode for postcss-url: ${mode}`);
+        throw new Error(`Unknown mode for postcss-url-no-xxhash: ${mode}`);
     }
 
     return require(`../type/${mode}`);
@@ -139,7 +139,7 @@ module.exports = {
 };
 
 /**
- * @typedef {Object} PostcssUrl~Options - postcss-url Options
+ * @typedef {Object} PostcssUrl~Options - postcss-url-no-xxhash Options
  * @property {String} [url=^rebase|inline|copy|custom] - processing mode
  * @property {Minimatch|RegExp|Function} [filter] - filter assets by relative pathname
  * @property {String} [assetsPath] - absolute or relative path to copy assets

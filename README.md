@@ -1,4 +1,4 @@
-# postcss-url
+# postcss-url-no-xxhash
 
 [![Travis Build Status](https://img.shields.io/travis/postcss/postcss-url/master.svg?label=unix%20build)](https://travis-ci.org/postcss/postcss-url)
 [![AppVeyor Build Status](https://img.shields.io/appveyor/ci/MoOx/postcss-url/master.svg?label=windows%20build)](https://ci.appveyor.com/project/MoOx/postcss-url)
@@ -156,7 +156,7 @@ Checkout [tests](test) for examples.
 #### `url`
 ##### `rebase` - _(default)_
 Allow you to fix `url()` according to postcss `to` and/or `from` options (rebase to `to` first if available, otherwise `from` or `process.cwd()`).
-##### `inline` 
+##### `inline`
 Allow you to inline assets using base64 encoding. Can use postcss `from` option to find ressources.
 ##### `copy`
 Allow you to copy and rebase assets according to postcss `to`, `assetsPath` and `from` options (`assetsPath` is relative to the option `to`).
